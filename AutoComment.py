@@ -134,6 +134,7 @@ class shotgroup:
         self.driver.close()
 
 if __name__ == "__main__":
+    random.seed( )
     print( '請輸入你的作業系統：' + '\n' + '（1）Linux' + '\n' + '（2）Windows' + '\n' + '（3）Mac' )
     v = input( '請輸入: ')
     version = ''
