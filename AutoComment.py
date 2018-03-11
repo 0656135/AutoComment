@@ -1,8 +1,8 @@
 from selenium import webdriver
 import time
-import random
+import random,os
 import tkinter as tk
-from tkinter import messagebox, StringVar, Canvas
+from tkinter import messagebox, StringVar
 from PIL import Image, ImageTk
 
 class shotgroup:
@@ -159,10 +159,10 @@ class Gui():
         self.ButtonL = tk.Button(self.win, text='Linux', command=lambda: self.click('linux'))
         self.ButtonM = tk.Button(self.win, text='Mac', command=lambda: self.click('mac'))
         self.v1 = StringVar(value='選擇功能')
-        self.select = tk.OptionMenu(self.win, self.v1, command=self.Select, *chose)
+        self.select = tk.OptionMenu(self.win, self.v1, command=self.Select, *chose )
         self.textSelect = tk.Entry(self.win)
         self.labelSelect = tk.Label(self.win, text='要發幾篇?')
-        render = ImageTk.PhotoImage(Image.open('./img/'+str(random.randint(0,4))+'.jpg'))
+        render = ImageTk.PhotoImage(Image.open(resource_path('./img/'+str(random.randint(0,4))+'.jpg')))
         self.photo = tk.Label(self.win, image=render)
         self.photo.image = render
         self.photo.grid(row=0, column=3,rowspan=5)
@@ -175,7 +175,6 @@ class Gui():
         self.ButtonW.grid(row=4, column=2)
         self.select.grid(row=2, column=0,columnspan='2')
         self.user = None
-
     def Select(self, select):
         if select == '自動發文':
             self.textSelect.grid_remove()
@@ -220,6 +219,15 @@ class Gui():
     def start(self):
         self.win.mainloop()
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def runGui():
     gui = Gui()

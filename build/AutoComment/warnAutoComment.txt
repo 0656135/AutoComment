@@ -1,0 +1,31 @@
+missing module named resource - imported by posix, D:\Documents\AutoComment\AutoComment.py
+missing module named posix - imported by os, D:\Documents\AutoComment\AutoComment.py
+missing module named _posixsubprocess - imported by subprocess, D:\Documents\AutoComment\AutoComment.py
+missing module named org - imported by pickle, D:\Documents\AutoComment\AutoComment.py
+missing module named readline - imported by cmd, code, pdb, D:\Documents\AutoComment\AutoComment.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, D:\Documents\AutoComment\AutoComment.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, D:\Documents\AutoComment\AutoComment.py
+missing module named _winreg - imported by platform, selenium.webdriver.firefox.firefox_binary, D:\Documents\AutoComment\AutoComment.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, D:\Documents\AutoComment\AutoComment.py
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions, D:\Documents\AutoComment\AutoComment.py
+missing module named vms_lib - imported by platform, D:\Documents\AutoComment\AutoComment.py
+missing module named termios - imported by tty, getpass, D:\Documents\AutoComment\AutoComment.py
+missing module named grp - imported by shutil, tarfile, pathlib, D:\Documents\AutoComment\AutoComment.py
+missing module named 'org.python' - imported by copy, xml.sax, D:\Documents\AutoComment\AutoComment.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, netrc, getpass, pathlib, D:\Documents\AutoComment\AutoComment.py
+missing module named _dummy_threading - imported by dummy_threading, D:\Documents\AutoComment\AutoComment.py
+missing module named cffi - imported by PIL.Image, PIL.PyAccess, PIL.ImageTk
+missing module named Tkinter - imported by PIL.ImageTk
+missing module named olefile - imported by PIL.FpxImagePlugin, PIL.MicImagePlugin
+missing module named 'PySide.QtCore' - imported by PIL.ImageQt
+missing module named 'PyQt4.QtCore' - imported by PIL.ImageQt
+missing module named 'PyQt5.QtCore' - imported by PIL.ImageQt
+missing module named pathlib2 - imported by PIL.Image
+missing module named __builtin__ - imported by PIL.Image
+missing module named urllib2 - imported by selenium.webdriver.common.utils, selenium.webdriver.remote.remote_connection, selenium.webdriver.common.service
+missing module named StringIO - imported by selenium.webdriver.remote.webelement
+missing module named urlparse - imported by selenium.webdriver.remote.remote_connection
+missing module named httplib - imported by selenium.webdriver.firefox.webdriver, selenium.webdriver.remote.remote_connection, selenium.webdriver.safari.webdriver, selenium.webdriver.blackberry.webdriver, selenium.webdriver.webkitgtk.webdriver
+missing module named cStringIO - imported by selenium.webdriver.firefox.firefox_profile
+missing module named copy_reg - imported by cStringIO
